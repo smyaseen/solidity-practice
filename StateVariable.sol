@@ -10,7 +10,7 @@ contract StateVariable {
 
 
     function foo() external pure returns (uint) {
-        // non state varialbe are those which are declared inside a function
+        // non state varialbes are those which are declared inside a function
         // they are created once the function starts to execute
         // and gone when function is done executing
         uint notStateVariable = 456;
