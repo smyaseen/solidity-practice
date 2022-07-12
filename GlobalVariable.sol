@@ -10,8 +10,14 @@ contract GlobalVariable {
 // and some more
 
     function globalVars() external view returns (address,uint,uint) {
+
+        // msg.sender stores the address of whoever calls the func
         address sender = msg.sender;
+
+        // the unix timestamp when the transaction occured
         uint timestamp = block.timestamp;
+
+        // the block number in the blockchain
         uint blockNumber = block.number;
 
         return (sender,timestamp, blockNumber);
