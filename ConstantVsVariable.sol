@@ -23,7 +23,8 @@ pragma solidity 0.8.7;
 
 // if you know that the surrounding area of a property is going to develop (variable)
 // its prices will increase
-// whereas a property with no change in area (constant), the price will remain same or less
+// whereas a property with no change in area (constant), 
+// the price will remain same or less
 
 // execution cost: 21420 gas
 contract Constant {

@@ -36,7 +36,7 @@ contract Errors {
     // custom error to save gases
     error MyError(address caller, uint i);
 
-    // throwing custom gas to save gas
+    // throwing custom error to save gas
     function testCustomError(uint i) public view {
         if (i > 10) {
             revert MyError(msg.sender, i);
