@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.7;
 
+// delete arr[index] only resets the value to default
+// by shifting we can restructure and resize the array
+
 contract ArrayRemoveByShifting {
     // [1, 2, 3] -- remove(1) --> [1, 3, 3] --> [1, 3]
     // [1, 2, 3, 4, 5, 6] -- remove(2) --> [1, 2, 4, 5, 6, 6] --> [1, 2, 4, 5, 6]
